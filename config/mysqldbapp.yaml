@@ -1,1 +1,4 @@
-
+listofmysqlapps:
+  - name: firstmysqldbname    
+  - name: secondmysqldbname
+  - name: thirdmysqldbname
