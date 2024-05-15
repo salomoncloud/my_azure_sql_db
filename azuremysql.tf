@@ -5,7 +5,7 @@ resource "azurerm_mssql_server" "salomon_db_mysql" {
   version                      = var.version_for_the_mysql_db
   administrator_login          = var.administrator_login
   administrator_login_password = var.administrator_login_password
-  minimum_tls_version          = "1.2"
+  minimum_tls_version          = var.min_tls_vers
 
   azuread_administrator {
     login_username = "AzureAD Admin"
