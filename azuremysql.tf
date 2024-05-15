@@ -8,7 +8,7 @@ resource "azurerm_mysql_server" "salomon_db_mysql" {
 
   sku_name   = var.sku
   storage_mb = var.storage_mb
-  version    = var.version
+  version    = var.version_for_the_mysql_db
 
   auto_grow_enabled                 = true
   backup_retention_days             = 7
