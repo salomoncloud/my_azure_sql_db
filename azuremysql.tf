@@ -1,5 +1,5 @@
 resource "azurerm_mysql_server" "salomon_db_mysql" {
-  name                = "salomon_db_mysql"
+  name                = "salomondbmysql"
   location            = azurerm_resource_group.salomon_db.location
   resource_group_name = azurerm_resource_group.salomon_db.name
 
