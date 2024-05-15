@@ -46,3 +46,6 @@ type=string
 variable "version_for_the_mysql_db" {
 type=string
 }
+variable "min_tls_vers" {
+type=string
+}
