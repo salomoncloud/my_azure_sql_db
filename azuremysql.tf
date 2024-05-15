@@ -1,12 +1,12 @@
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "West Europe"
+resource "azurerm_resource_group" "salomon_db" {
+  name     = "salomon_db"
+  location = "canada east"
 }
 
-resource "azurerm_mysql_server" "example" {
-  name                = "example-mysqlserver"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
+resource "azurerm_mysql_server" "salomon_db_mysql" {
+  name                = "salomon_db_mysql"
+  location            = azurerm_resource_group.salomon_db.location
+  resource_group_name = azurerm_resource_group.salomon_db.name
 
   administrator_login          = 
   administrator_login_password = 
