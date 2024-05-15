@@ -1,8 +1,3 @@
-resource "azurerm_resource_group" "salomon_db" {
-  name     = "salomon_db"
-  location = "canada east"
-}
-
 resource "azurerm_mysql_server" "salomon_db_mysql" {
   name                = "salomon_db_mysql"
   location            = azurerm_resource_group.salomon_db.location
