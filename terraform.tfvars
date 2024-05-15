@@ -1,4 +1,4 @@
 myname="salomon"
 sku_name="SHARED"
 storage_mb=5120
-version="5.7"
+version_for_the_mysql_db="5.7"
