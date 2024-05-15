@@ -6,9 +6,9 @@ resource "azurerm_mysql_server" "salomon_db_mysql" {
   administrator_login          = var.administrator_login
   administrator_login_password = var.administrator_login_password
 
-  sku_name   = "B_Gen5_2"
-  storage_mb = 5120
-  version    = "5.7"
+  sku_name   = var.sku
+  storage_mb = var.storage_mb
+  version    = var.version
 
   auto_grow_enabled                 = true
   backup_retention_days             = 7
