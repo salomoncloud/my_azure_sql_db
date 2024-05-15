@@ -8,8 +8,8 @@ resource "azurerm_mysql_server" "salomon_db_mysql" {
   location            = azurerm_resource_group.salomon_db.location
   resource_group_name = azurerm_resource_group.salomon_db.name
 
-  administrator_login          = 
-  administrator_login_password = 
+  administrator_login          = var.administrator_login
+  administrator_login_password = var.administrator_login_password
 
   sku_name   = "B_Gen5_2"
   storage_mb = 5120
