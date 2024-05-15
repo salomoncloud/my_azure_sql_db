@@ -43,3 +43,12 @@ type=string
 variable "administrator_login" {
 type=string
 }
+variable "sku" {
+type="string"
+}
+variable "storage_mb" {
+type=number
+}
+variable "version" {
+type="string"
+}
