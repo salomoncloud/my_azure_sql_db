@@ -44,11 +44,11 @@ variable "administrator_login" {
 type=string
 }
 variable "sku" {
-type="string"
+type=string
 }
 variable "storage_mb" {
 type=number
 }
 variable "version_for_the_mysql_db" {
-type="string"
+type=string
 }
