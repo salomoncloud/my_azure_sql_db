@@ -1,4 +1,5 @@
 resource "azurerm_mssql_server" "salomon_db_mysql" {
+for_each            ={for sp in local.mysql_app_list: "${sp.name}"=>sp }
   name                         = "salomondbmysql"
   resource_group_name          = azurerm_resource_group.salomon_db.name
   location                     = azurerm_resource_group.salomon_db.location
