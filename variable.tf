@@ -49,3 +49,7 @@ type=string
 variable "min_tls_vers" {
 type=string
 }
+variable "testing_gitlens" {
+  type=string
+  default="gitlens"
+}
